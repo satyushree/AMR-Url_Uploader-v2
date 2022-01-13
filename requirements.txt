@@ -22,3 +22,4 @@ aiofiles
 sqlalchemy==1.3.20
 asyncio
 olefile
+bs4

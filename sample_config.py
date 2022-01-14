@@ -78,4 +78,4 @@ class Config(object):
     # Sql Database url
     DB_URI = os.environ.get("DATABASE_URL", "")
     
-    
+    SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', '@All_Movie_Rocker')

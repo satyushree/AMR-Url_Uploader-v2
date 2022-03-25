@@ -19,12 +19,12 @@ from pyrogram.errors import ChatAdminRequired
 
 @Client.on_message(filters.command(["start"]) & filters.private)
 async def start(bot, update):
-    if not await db.is_user_exist(update.chat.id):
-        await db.add_user(update.chat.id)
-        await bot.send_message(
-            Config.LOG_CHANNEL,
-            f"New User [{update.from_user.first_name}](tg://user?id={update.chat.id}) started."
-        )
+#    if not await db.is_user_exist(update.chat.id):
+#        await db.add_user(update.chat.id)
+#        await bot.send_message(
+#            Config.LOG_CHANNEL,
+#            f"New User [{update.from_user.first_name}](tg://user?id={update.chat.id}) started."
+#        )
         
     await update.reply_text(
         text=Translation.START_TEXT.format(update.from_user.mention),

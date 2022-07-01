@@ -265,7 +265,7 @@ async def echo(bot, update):
                         ]
                     inline_keyboard.append(ikeyboard)
                 if duration is not None:
-                        cb_string_64 = "{}|{}|{}".format("audio", "64k", "mp3")
+                    cb_string_64 = "{}|{}|{}".format("audio", "64k", "mp3")
                     cb_string_128 = "{}|{}|{}".format("audio", "128k", "mp3")
                     cb_string = "{}|{}|{}".format("audio", "320k", "mp3")
                     inline_keyboard.append([

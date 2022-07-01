@@ -70,7 +70,7 @@ class Config(object):
     DATABASE_NAME = os.environ.get('DATABASE_NAME', "URL-BOT")
     
     # Log channel for banning spammers
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-100")
     
     # space to divide admins
     ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMINS', '').split()]

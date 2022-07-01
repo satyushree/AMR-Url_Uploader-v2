@@ -79,3 +79,6 @@ class Config(object):
     DB_URI = os.environ.get("DATABASE_URL", "")
     
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', '@All_Movie_Rocker')
+    
+    # Banned Unwanted Members..
+    BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
